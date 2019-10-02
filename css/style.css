@@ -77,9 +77,8 @@ h2 a{
     font-size: 110%;
 }
 a{
-    color: #fff;
-    text-decoration:none;
-
+    color: #fff !important;
+    text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
