@@ -80,6 +80,11 @@ a{
     color: #fff;
     text-decoration: none;
 }
+.smoothScroll {
+  color: #fff !important;
+  text-decoration: none;
+}
+
 a:hover{
     text-decoration: underline;
 }
