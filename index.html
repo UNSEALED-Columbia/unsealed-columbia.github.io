@@ -1,150 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head >
-		<link rel="icon"
-	      type="image/png"
-	      href="css/unsealed_fb.png">
-		<meta charset = "utf-8">
-		<meta name = "viewport" content = "width=device-width, initial-scale=1">
-		<title>unSEAled - Columbia's Southeast Asian Zine</title>
-		<link rel = "stylesheet" type = "text/css" href = "css/style.css" media = "screen">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Raleway|Lato|Roboto|Nunito|Montserrat|Lobster|Courier New|Playfair+Display" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-		<script src = "js/jquery-3.1.0.min.js"></script>
-		<script type = "text/javascript" src = "js/smoothscroll.js"></script>
-		<script tyle = "text/javascript" src = "js/loading.js"></script>
-		<script tyle = "text/javascript" src ="js/typed.min.js"></script>
-		<script tyle = "text/javascript" src="js/typewriter.js"></script>
 
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href = "#timeline" class="smoothScroll">Timeline</a></li>
-					<li><a href = "#submit" class="smoothScroll">Submit</a></li>
-		      <li><a href = "#past-entries" class="smoothScroll">Past Entries</a></li>
-					<li><a href= "#contact" class="smoothScroll">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div class="bg" id ="home"></div>
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-		<div class="center">
-		  <br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-		  <a href="https://www.facebook.com/Unsealed-Columbia-Universitys-Southeast-Asian-Zine-499892363867410/"><i class="fa fa-facebook-official fa-2x" style="color:#f0f0f0"></i></a>
-			<a href="https://www.instagram.com/unsealednyc/"><i class="fa fa-instagram fa-2x" style="color:#f0f0f0"></i></a>
-		</div>
-		<br>
-		<div class="next-event-container">
-			<p>The purpose of unSEAled is to provide a space to share Southeast Asian and Southeast Asian American experiences through writing, art, music, film, and photography. This project is being created in collaboration between numerous organizations on campus, including but not limited to the Vietnamese Students Association, Liga Filipina, the Malaysian Students Association, the Thai Club, and the Singapore Students Asscociation.
-		    <br><br>
-		  The unSEAled zine will consist of both student submissions and curated selections of prominent Southeast Asian and Southeast Asian American artists. There will both a print and online version. There is no requirement on what type of works are submitted, as long as you are Southeast Asian or Southeast Asian American. We ultimately hope to elevate Southeast Asian and Southeast Asian American voices while bringing together and showcasing our diverse communities.
-		  <br><br>
-		      <p>During the month of October and November, we'll gradually share previews of various submissions (as permitted by the artist) on this website. Stay tuned for more and follow us on Facebook!</p>
-		  </p>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
-		</div>
-		<br>
-		<h1 class="boxed" id="timeline">Timeline</h1><br>
-		<br><br>
-		  <div class="timeline">
-		  <div class="timeline-container timeline-left">
-		    <div class="timeline-content">
-		      <h2 style="color: white;">Oct. 1st - Submissions Open</h2>
-		      <br>
-		      <p style = "color: white;">Scroll down to the submit section to view guidelines on submissions!</p>
-		    </div>
-		  </div>
-		  <div class="timeline-container timeline-right">
-		    <div class="timeline-content">
-		      <h2 style="color: white;">Nov. 1st - Submissions Close</h2>
-		    </div>
-		  </div>
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		  <div class="timeline-container timeline-left">
-		    <div class="timeline-content">
-		      <h2 style="color: white;">Nov. 2th - Nov. 10th - Editorial Phase</h2>
-		      <br>
-		      <p style = "color: white;">Our editorial board will review submissions and work with you on a final product!</p>
-		    </div>
-		  </div>
-		  <div class="timeline-container timeline-right">
-		    <div class="timeline-content">
-		      <h2 style="color: white;">Nov. 22nd - Zine Launch Event</h2>
-		      <br>
-		      <p style="color: white;">Come celebrate our artists! This event will be in Lerner 555 from 6 to 8 PM. A limited set of printed zines will be given out for free and the entire online zine will be published. We'll have speakers, food, an open mic, tables featuring different Southeast Asian identities, and more!</p>
-		    </div>
-		  </div>
-		</div>
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
 
-		<!--SUBMIT-->
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-		<br>
-		<br>
-		<h1 class="boxed" id="submit">Submit</h1><br>
-		<div class="general-container">
-		  <br>
-		  <h2><strong>Any work of art, writing, music, film, or photography can be submitted to the unSEAled Zine!</strong></h2>
-		  <br>
-		    <p> It does not have to relate directly to the Southeast Asian or Southeast Asian American identity. Art takes all forms, and every voice and perspective is appreciated. The only requirement is that you, the submitter, are Southeast Asian or Southeast Asian American identifying. <b>(You do not have to be a student at Columbia University to submit.)</b>
-		  <br><br>
-		  <p>There will be two different versions of the unSEAled zine: a print version and an online version. The print version will be limited to art, writing, and photography. The online version will also feature music and film. During the months of October and November, we will gradually add previews and submissions to this website leading up to the launch. As the artist, you can tell us whether or not you want this to occur with your piece in your submission form!</p>
-		  <br><br>
-		    <p>All writing pieces will be reviewed by an editorial board who will work with you to finetune whatever you submit.</p>
-		<br><br>
-		  <h2><a href="https://forms.gle/9twaTgup3WdkKDFt7">Submit here</a></h2>
-		  <br>
-		</div>
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
 
-		<!--BLOG PREVIEW-->
-		<br>
-		<h1 class="boxed" id="past-entries">2019 preview</h1><br>
-		<div class = "general-container">
-		  <br>
-		  <div>
-		    <img class = "past-event" src = "img/2019/thomas.jpg">
-		    <h2>A Candid Conversation with Thomas Ngô
-		        <br><strong>Conducted by Như Đoàn
-		        </strong></h2>
-		        <p>
-							Thomas Ngô (Columbia College ‘22) is a second-year student from El Monte, California.
-							In this interview, Thomas discusses his photography and creative process with us via a collection of photographs taken during a visit to Southeast Asia with his family this summer.
-		        	<br>
-							<br>
-							The photographs pictured in this interview are only a few of Thomas' collection. More will be released at the Zine launch!
-						</p>
-		        <br><br><h2>View the full interview <a href="https://medium.com/@unsealed.zine/a-candid-conversation-with-thomas-ng%C3%B4-871ea5df4c0b">here!</a></h2>
-		  </div
-		  <p style="clear:left"></p>
-		</div>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+</head>
 
-		<!--CONTACT-->
-		<br>
-		<h1 class="boxed" id="contact">Contact</h1>
-		<div class="general-container">
-			<br>
-			<h2>Email us: <a href="mailto:unsealed-zine@gmail.com">unsealed-zine@gmail.com</a></h2>
-			<h2>Follow us on Facebook: <a href="https://www.facebook.com/Unsealed-Columbia-Universitys-Southeast-Asian-Zine-499892363867410/">unSEAled</a></h2>
-			<h2>Follow us on Instagram: <a href="https://www.instagram.com/unsealednyc/"> unSEAled</a></h2>
-		  <br>
-		    <p>This is a project currently being led in collaboration by the Vietnamese Students Association, Liga Filipina, the Malaysian Students Association, the Thai Club, and the Singapore Students Association. Interested in cosponsoring or collaborating to ensure proper representation of your voice? Just have questions or concerns in general? Reach out to us! </p>
-		</div>
-		<br>
-	</body>
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <!--
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        -->
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#timeline" class="smoothScroll">Timeline</a></li>
+          <li><a href="#2019-preview" class="smoothScroll">2019</a></li>
+          <li><a href="#2018-submissions" class="smoothScroll">2018</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+    <div class="container">
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/waves.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">The purpose of unSEAled is to provide a space to share Southeast Asian and Southeast Asian American writing, art, music, film, and photography.</p>
+            <p class="separator">There is no requirement on what type of works are submitted (most notably, does not have to relate directly to cultural identity). The only requirement is that you are Southeast Asian or Southeast Asian American identifying.<b> You do not have to be a Columbia University student to submit</b>.</p>
+            <p class="separator">This is a collaborative passion project between numerous Southeast Asian cultural clubs at Columbia University. We're so excited for you to share your work with us.</p>
+            <p class="separator">Submit <a href="https://forms.gle/Y2Da65ePJ1fRkqgo8">here</a>!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+        <div class="services-carousel owl-theme">
+          <div class="services-block">
+            <span>VIETNAMESE STUDENTS ASSOCIATION</span>
+            <p class="separator">Nhu Doan, Thomas Ngo, John Nguyen</p>
+          </div>
+          <div class="services-block">
+            <span>LIGA Filipina</span>
+            <p class="separator">Leanne Alina, Andre O'Quinn</p>
+          </div>
+          <div class="services-block">
+            <span>Singapore Students Association</span>
+            <p class="separator">Jessica Xu, Natasha Nair</p>
+          </div>
+          <div class="services-block">
+            <span>Thai Club</span>
+            <p class="separator">Nuch Sophonpanich, Richie Limpijankit</p>
+          </div>
+          <div class="services-block">
+            <span>Malaysia Students Association</span>
+            <p class="separator">Milaine Thia</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- end section services -->
+
+
+  <!-- start section portfolio -->
+  <div id="timeline" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Timeline</h2>
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <img src="images/timeline-real-2.jpg"/>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start section journal -->
+  <div id="2019-preview" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>2019 preview</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/a-candid-conversation-with-thomas-ng%C3%B4-871ea5df4c0b"><img src="images/blog-post-1.jpeg" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/a-candid-conversation-with-thomas-ng%C3%B4-871ea5df4c0b">A Candid Conversation with Thomas Ngô</a></h4>
+                <p class="separator">Thomas discusses his photography and creative process with us via a collection of photographs taken during a visit to Southeast Asia with his family this summer.</p>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+  <!-- start section journal -->
+  <div id="2018-submissions" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Select 2018 submissions</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/grandfather-died-today-93c4b233020c"><img src="images/2018/grandpa.jpg" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/grandfather-died-today-93c4b233020c">Grandfather Died Today</a></h4>
+                <p class="separator">A story by Jing Hwan Khoo, an NYU student from Malaysia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/the-mutilation-of-our-mother-tongue-a4296a6df34d"><img src="images/2018/mutilation.jpeg" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/the-mutilation-of-our-mother-tongue-a4296a6df34d">The Mutilation of our Mother Tongue</a></h4>
+                <p class="separator">Tyler details the way Vietnam's new educational curriculum risks seriously altering the Vietnamese language for future generations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/a-celebration-of-christianity-photo-series-by-neil-pedreira-c3653e7b2bce"><img src="images/2018/christian.jpeg" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/a-celebration-of-christianity-photo-series-by-neil-pedreira-c3653e7b2bce">A Celebration of Christianity</a></h4>
+                <p class="separator">A Photo Series by Neil Pedreira.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/expressing-identity-through-painting-an-interview-with-celia-bui-le-18c5ea287aca"><img src="images/2018/celia.png" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/expressing-identity-through-painting-an-interview-with-celia-bui-le-18c5ea287aca">Expressing Identity through Painting</a></h4>
+                <p class="separator">Celia discusses several of her paintings and how making art functions as a method of expressing her identity as a queer and Asian woman.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/from-americas-got-talent-to-a-doctorate-in-musical-arts-4f9c94dd4b81?fbclid=IwAR3mYw10mvliOB_qMj1NBYXuwj6t0AGQW0zrrr5V1ZwTjBFm_AnUYzR0cvQ&_branch_match_id=463599270557742452"><img src="images/2018/alex.jpg" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/from-americas-got-talent-to-a-doctorate-in-musical-arts-4f9c94dd4b81?fbclid=IwAR3mYw10mvliOB_qMj1NBYXuwj6t0AGQW0zrrr5V1ZwTjBFm_AnUYzR0cvQ&_branch_match_id=463599270557742452">From “America’s Got Talent” to a Doctorate in Musical Arts</a></h4>
+                <p class="separator">An interview with the classical pianist, Alexander Bui.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="https://medium.com/@unsealed.zine/iii-knowing-4bed0ab007a7"><img src="images/2018/knowing.png" class="img-responsive" alt="img"></a>
+              <div class="journal-txt">
+                <h4><a href="https://medium.com/@unsealed.zine/iii-knowing-4bed0ab007a7">Knowing</a></h4>
+                <p class="separator">A short story written by Milaine, a junior in Columbia College studying English.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section journal -->
+
+  <!-- start section contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">CONTACT</h2>
+
+              <ul class="contact-details">
+                <li><span>Follow us on Facebook and Instagram to stay up to date!</li>
+                <li><span>For all other inquiries, please contact us at <a href="mailto:unsealed.zine@gmail.com">unsealed.zine@gmail.com</a>.</span></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section contact -->
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/Unsealed-Columbia-Universitys-Southeast-Asian-Zine-499892363867410/"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/unsealednyc/"><i class="ion-social-instagram"></i></a></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
